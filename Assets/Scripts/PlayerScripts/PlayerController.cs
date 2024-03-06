@@ -69,4 +69,8 @@ public class PlayerController : MonoBehaviour
         livesHUDObject.text = livesText;
         coinsHUDObject.text = coinsText;
     }
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+    }
 }

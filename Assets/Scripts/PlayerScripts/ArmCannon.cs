@@ -25,23 +25,23 @@ public class ArmCannon : MonoBehaviour
         }
 
     }
-    void OnFire()
-    {
-        if(playerFPS.inputIsEnalbled)
-        {
-            if(bulletIsAlive != true)
-            {
-                bulletIsAlive = true;
-                bullet = GameObject.Instantiate(projectile, armCannon.transform.position,bulletRotation);
-                bulletRB = bullet.GetComponent<Rigidbody>();
-                bulletRB.AddForce(armCannon.transform.up*BulletForce, ForceMode.Impulse);
-            }
-            else
-            {
-                Destroy(bullet);
-            }    
-        }
-    }
+    // void OnFire()
+    // {
+    //     if(playerFPS.inputIsEnalbled)
+    //     {
+    //         if(bulletIsAlive != true)
+    //         {
+    //             bulletIsAlive = true;
+    //             bullet = GameObject.Instantiate(projectile, armCannon.transform.position,bulletRotation);
+    //             bulletRB = bullet.GetComponent<Rigidbody>();
+    //             bulletRB.AddForce(armCannon.transform.up*BulletForce, ForceMode.Impulse);
+    //         }
+    //         else
+    //         {
+    //             Destroy(bullet);
+    //         }    
+    //     }
+    // }
     void Update()
     {
         bulletRotation = playerTransform.rotation;
