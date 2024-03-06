@@ -1259,7 +1259,7 @@ MonoBehaviour:
   speedMultiplier: 2
   sprintMultiplier: 2
   crouchMultiplier: 0.7
-  jumpForce: 5
+  jumpForce: 250
   currentSpeed: 0
   isSprinting: 0
   isCrouching: 0
